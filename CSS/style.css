@@ -303,10 +303,10 @@ section.hero::before {
 }
 
 section.about .about-text {
-  margin: 28px 0 18px;
+  margin: 20px 0 10px;
   border-radius: 28px;
   background: rgba(255, 255, 255, 0.05);
-  padding: 28px 30px;
+  padding: 24px 28px;
   backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
@@ -363,16 +363,16 @@ section.about .about-text {
 }
 
 .projects {
-  padding: 40px 0 60px;
+  padding: 12px 0 18px;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 18px;
+  gap: 12px;
+  margin-top: 12px;
   overflow: visible;
-  padding: 6px 4px 8px;
+  padding: 4px 4px 6px;
   scroll-behavior: smooth;
 }
 
@@ -418,15 +418,15 @@ section.about .about-text {
   }
 
   .about-text {
-    padding: 56px 70px;
+    padding: 30px 34px;
   }
 
   .about-highlights {
-    gap: 20px;
+    gap: 14px;
   }
 
   .skills-group {
-    padding: 28px 30px;
+    padding: 20px 22px;
   }
 }
 
@@ -501,7 +501,7 @@ section.about .about-text {
 }
 
 section.skills {
-  padding: 12px 0 22px;
+  padding: 8px 0 18px;
 }
 
 .section-head {
@@ -518,8 +518,8 @@ section.skills {
 }
 
 .skills-group {
-  margin-top: 14px;
-  padding: 18px 20px;
+  margin-top: 10px;
+  padding: 16px 18px;
   border-radius: 22px;
   background: linear-gradient(
     135deg,
@@ -789,16 +789,18 @@ footer {
   }
 
   section.about .about-text {
-    padding: 24px;
-    margin: 40px 0;
+    padding: 20px 18px;
+    margin: 18px 0 12px;
   }
 
   .about-highlights {
     grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 16px;
   }
 
   .skills-group {
-    padding: 18px;
+    padding: 16px 14px;
   }
 
   .skills-slider {
@@ -866,25 +868,25 @@ footer {
   }
 
   section.about .about-text {
-    margin: 22px 0;
-    padding: 20px 18px;
+    margin: 14px 0 8px;
+    padding: 18px 14px;
   }
 
   .section-head h2 {
     font-size: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .projects {
-    padding: 18px 0 20px;
+    padding: 10px 0 12px;
   }
 
   .project-grid {
     display: grid;
     grid-template-columns: 1fr;
     overflow: visible;
-    gap: 12px;
-    margin-top: 18px;
+    gap: 10px;
+    margin-top: 12px;
   }
 
   .project-card {
@@ -898,12 +900,12 @@ footer {
   }
 
   section.skills {
-    padding: 18px 0 22px;
+    padding: 10px 0 14px;
   }
 
   .skills-group {
-    margin-top: 16px;
-    padding: 16px 14px;
+    margin-top: 10px;
+    padding: 14px 12px;
   }
 
   .skills-slider {
