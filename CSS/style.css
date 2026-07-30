@@ -88,7 +88,7 @@ img {
 }
 
 .container {
-  width: min(1200px, 90%);
+  width: min(1240px, 92%);
   margin: auto;
 }
 
@@ -180,10 +180,10 @@ section.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 72px 84px;
   min-height: 100vh;
-  gap: 40px;
-  border-radius: 30px;
+  gap: 60px;
+  border-radius: 34px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(14px);
@@ -204,6 +204,7 @@ section.hero::before {
 
 .hero--info {
   flex: 1;
+  max-width: 580px;
 }
 
 .hero--info span {
@@ -285,8 +286,8 @@ section.hero::before {
 }
 
 .hero-image img {
-  width: 400px;
-  height: 400px;
+  width: 420px;
+  height: 420px;
   object-fit: cover;
   border-radius: 65%;
   border: 5px solid #018878;
@@ -303,10 +304,10 @@ section.hero::before {
 }
 
 section.about .about-text {
-  margin: 80px 0;
-  border-radius: 30px;
+  margin: 90px 0;
+  border-radius: 32px;
   background: rgba(255, 255, 255, 0.05);
-  padding: 50px 60px;
+  padding: 56px 68px;
   backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
@@ -358,26 +359,22 @@ section.about .about-text {
 }
 
 .projects {
-  padding: 30px 0 50px;
+  padding: 40px 0 60px;
 }
 
 .project-grid {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
   margin-top: 40px;
-  overflow-x: auto;
+  overflow: visible;
   padding: 8px 4px 20px;
-  scroll-snap-type: x proximity;
   scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: #018878 rgba(255, 255, 255, 0.08);
 }
 
 .project-card {
   position: relative;
-  flex: 0 0 min(320px, 78vw);
-  min-width: min(320px, 78vw);
+  min-width: 0;
   overflow: hidden;
   border-radius: 18px;
   padding: 24px;
@@ -396,6 +393,37 @@ section.about .about-text {
   transform: translateY(-8px) scale(1.01);
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
   border-color: rgba(0, 208, 132, 0.5);
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    padding: 72px 84px;
+  }
+
+  .hero--info h1 {
+    font-size: 72px;
+  }
+
+  .hero--info h2 {
+    font-size: 38px;
+  }
+
+  .hero-image img {
+    width: 460px;
+    height: 460px;
+  }
+
+  .about-text {
+    padding: 56px 70px;
+  }
+
+  .about-highlights {
+    gap: 20px;
+  }
+
+  .skills-group {
+    padding: 28px 30px;
+  }
 }
 
 .project-content {
@@ -483,8 +511,8 @@ section.skills {
 
 .skills-group {
   margin-top: 28px;
-  padding: 24px;
-  border-radius: 24px;
+  padding: 28px 30px;
+  border-radius: 26px;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.07),
@@ -651,7 +679,7 @@ section.skills {
 }
 
 .contacts {
-  padding: 50px 0;
+  padding: 60px 0 40px;
   text-align: center;
 }
 
