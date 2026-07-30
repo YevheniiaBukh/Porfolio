@@ -10,21 +10,32 @@
     <div class="wrapper">
       <header class="container">
         <span class="logo">My profile</span>
-        <nav>
-          <ul>
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li class="btn"><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="header-actions">
+          <nav>
+            <ul>
+              <li class="active">
+                <a href="#home">Home</a>
+              </li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li class="btn">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <section class="hero container reveal" id="home">
         <div class="hero--info">
           <h1>Yevheniia Bukhtata</h1>
           <h2>Backend Developer</h2>
           <p>Junior backend developer with experience in Python.</p>
+          <div class="hero-highlights">
+            <span class="hero-tag">Python</span>
+            <span class="hero-tag">APIs</span>
+            <span class="hero-tag">Databases</span>
+          </div>
           <div class="hero--info__btn">
             <a
               href="files/Yevheniia_Bukhtata_Junior_FullStack_Developer.pdf"
@@ -52,6 +63,20 @@
               technologies quickly, and continuously improving my skills in
               modern development workflows.
             </p>
+            <div class="about-highlights">
+              <div class="about-card">
+                <h3>Main focus</h3>
+                <p>Building reliable backend solutions and clean APIs.</p>
+              </div>
+              <div class="about-card">
+                <h3>Mindset</h3>
+                <p>Practical, structured, and solution-oriented.</p>
+              </div>
+              <div class="about-card">
+                <h3>Growth</h3>
+                <p>Always learning new tools and improving every day.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -143,7 +168,7 @@
         </div>
 
         <div class="skills-group">
-          <h3>Languages</h3>
+          <h3>Programming Languages</h3>
           <div class="skills-slider" id="skills-slider">
             <div class="block reveal">
               <img src="img/python.svg" alt="Python" />
@@ -244,6 +269,34 @@
           </div>
         </div>
       </section>
+
+      <section class="languages-panel container reveal">
+        <div class="languages-panel__content">
+          <div class="languages-panel__header">
+            <h3>Languages</h3>
+            <p>Communication skills and language background</p>
+          </div>
+          <div class="languages-list">
+            <div class="language-item reveal">
+              <span class="language-name">English</span>
+              <span class="language-level">B1</span>
+            </div>
+            <div class="language-item reveal">
+              <span class="language-name">Polish</span>
+              <span class="language-level">B1</span>
+            </div>
+            <div class="language-item reveal">
+              <span class="language-name">Ukrainian</span>
+              <span class="language-level">Native</span>
+            </div>
+            <div class="language-item reveal">
+              <span class="language-name">Russian</span>
+              <span class="language-level">Native</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="contacts container reveal" id="contact">
         <h2>Contact</h2>
         <div class="contacts-grid">
@@ -259,7 +312,8 @@
     </div>
     <footer class="container">
       <p>
-        &copy; <span id="year"></span> Yevheniia Bukhtata. All rights reserved.
+        &copy; <span id="year"></span> Yevheniia Bukhtata.
+        <span>All rights reserved.</span>
       </p>
     </footer>
     <script src="js/script.js"></script>
