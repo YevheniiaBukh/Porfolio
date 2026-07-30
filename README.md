@@ -58,4 +58,4 @@ Feel free to reach out if you would like to connect or discuss collaboration opp
 
 ## Author
 
-Developed by: [yevheniia Bukhtata]
+Developed by: [Yevheniia Bukhtata]
