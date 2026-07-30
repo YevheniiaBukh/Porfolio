@@ -1,7 +1,6 @@
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-
 document.querySelectorAll('nav a[href^="#"]').forEach(link => {
     link.addEventListener("click", function (e) {
         e.preventDefault();
@@ -19,6 +18,20 @@ document.querySelectorAll('nav a[href^="#"]').forEach(link => {
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li");
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+            }
+        });
+    },
+    { threshold: 0.15 }
+);
+
+revealElements.forEach((element) => observer.observe(element));
 
 window.addEventListener("scroll", () => {
     let current = "";
@@ -26,7 +39,7 @@ window.addEventListener("scroll", () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop - 120;
 
-        if (pageYOffset >= sectionTop) {
+        if (window.scrollY >= sectionTop) {
             current = section.getAttribute("id");
         }
     });

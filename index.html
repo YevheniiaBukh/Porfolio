@@ -20,7 +20,7 @@
           </ul>
         </nav>
       </header>
-      <section class="hero container" id="home">
+      <section class="hero container reveal" id="home">
         <div class="hero--info">
           <h1>Yevheniia Bukhtata</h1>
           <h2>Backend Developer</h2>
@@ -39,29 +39,37 @@
           <img src="img/photo.jpg" alt="Yevheniia Bukhtata" />
         </div>
       </section>
-      <section class="container about" id="about">
+      <section class="container about reveal" id="about">
         <div class="about-info">
           <div class="about-text">
             <h2>About Me</h2>
             <p>
-              I am a passionate backend developer with a strong foundation in
-              electronics and hardware repair. My transition into software
-              development has been driven by a love for problem-solving and
-              creating efficient, scalable solutions.
+              I am a backend developer with a strong foundation in electronics
+              and hardware repair, which helped me build a practical,
+              solution-oriented mindset. I enjoy turning complex problems into
+              clear, efficient, and reliable software solutions. My passion lies
+              in creating well-structured applications, learning new
+              technologies quickly, and continuously improving my skills in
+              modern development workflows.
             </p>
           </div>
         </div>
       </section>
-      <section class="container projects" id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <img src="img/todo.png" alt="Todo App" />
-            <h3>Todo App</h3>
-            <p>
-              REST API for task management with user authentication, CRUD
-              operations, and SQLite database using Flask.
-            </p>
+      <section class="container projects reveal" id="projects">
+        <div class="section-head">
+          <h2>Projects</h2>
+        </div>
+        <div class="project-grid" id="project-grid">
+          <div class="project-card reveal">
+            <div class="project-content">
+              <h3>Todo App</h3>
+              <p>
+                A practical task-management solution with secure user access,
+                structured CRUD operations, and a lightweight database layer.
+                The project focuses on clean backend logic and a simple,
+                intuitive user experience.
+              </p>
+            </div>
             <div class="technologies">
               <span>Python</span>
               <span>Flask</span>
@@ -69,27 +77,47 @@
               <span>HTML</span>
               <span>CSS</span>
             </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/YevheniiaBukh"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on GitHub</a
+              >
+            </div>
           </div>
-          <div class="project-card">
-            <img src="img/notes.png" alt="Notes" />
-            <h3>Notes App</h3>
-            <p>
-              RESTful API built with FastAPI and PostgreSQL for creating,
-              updating, and managing personal notes.
-            </p>
+          <div class="project-card reveal">
+            <div class="project-content">
+              <h3>Notes App</h3>
+              <p>
+                A modern note-taking API designed for speed and clarity,
+                supporting creation, updates, and organization of personal notes
+                with a scalable backend architecture.
+              </p>
+            </div>
             <div class="technologies">
               <span>Python</span>
               <span>FastAPI</span>
               <span>PostgreSQL</span>
             </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/YevheniiaBukh"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on GitHub</a
+              >
+            </div>
           </div>
-          <div class="project-card">
-            <img src="img/logo.png" alt="Logo App" />
-            <h3>Logo App</h3>
-            <p>
-              Responsive web application with Flask backend and SQLite database
-              for managing logo templates.
-            </p>
+          <div class="project-card reveal">
+            <div class="project-content">
+              <h3>Logo App</h3>
+              <p>
+                A responsive web application that combines a polished frontend
+                with a reliable backend for managing logo templates efficiently,
+                with an emphasis on usability and maintainable structure.
+              </p>
+            </div>
             <div class="technologies">
               <span>HTML</span>
               <span>CSS</span>
@@ -97,48 +125,126 @@
               <span>Flask</span>
               <span>SQLite</span>
             </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/YevheniiaBukh"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on GitHub</a
+              >
+            </div>
           </div>
           <!-- Add more project cards as needed -->
         </div>
       </section>
-      <section class="skills container" id="skills">
-        <h2>Skills</h2>
-        <div class="skills-slider">
-          <div class="block">
-            <img src="img/python.svg" alt="Python" />
-            <span>Python</span>
+      <section class="skills container reveal" id="skills">
+        <div class="section-head">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills-group">
+          <h3>Languages</h3>
+          <div class="skills-slider" id="skills-slider">
+            <div class="block reveal">
+              <img src="img/python.svg" alt="Python" />
+              <span>Python</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/javascript.svg" alt="JavaScript" />
+              <span>JavaScript</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/html5.svg" alt="HTML" />
+              <span>HTML</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/css.svg" alt="CSS" />
+              <span>CSS</span>
+            </div>
           </div>
-          <div class="block">
-            <img src="img/flask.svg" alt="Flask" />
-            <span>Flask</span>
+        </div>
+
+        <div class="skills-group">
+          <h3>Databases</h3>
+          <div class="skills-slider">
+            <div class="block reveal">
+              <img src="img/sqlite.svg" alt="SQLite" />
+              <span>SQLite</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/postgresql.svg" alt="PostgreSQL" />
+              <span>PostgreSQL</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/mysql.svg" alt="MySQL" />
+              <span>MySQL</span>
+            </div>
           </div>
-          <div class="block">
-            <img src="img/html5.svg" alt="HTML" />
-            <span>HTML</span>
+        </div>
+
+        <div class="skills-group">
+          <h3>Frameworks & Libraries</h3>
+          <div class="skills-slider">
+            <div class="block reveal">
+              <img src="img/flask.svg" alt="Flask" />
+              <span>Flask</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/fastapi.svg" alt="FastAPI" />
+              <span>FastAPI</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/render.svg" alt="Render" />
+              <span>Render</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/pygame.svg" alt="Pygame" />
+              <span>Pygame</span>
+            </div>
           </div>
-          <div class="block">
-            <img src="img/css.svg" alt="CSS" />
-            <span>CSS</span>
+        </div>
+
+        <div class="skills-group">
+          <h3>DevOps & Tools</h3>
+          <div class="skills-slider">
+            <div class="block reveal">
+              <img src="img/docker.svg" alt="Docker" />
+              <span>Docker</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/docker-compose.svg" alt="Docker Compose" />
+              <span>Docker Compose</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/git.svg" alt="Git" />
+              <span>Git</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/github.svg" alt="GitHub" />
+              <span>GitHub</span>
+            </div>
           </div>
-          <div class="block">
-            <img src="img/sqlite.svg" alt="SQLite" />
-            <span>SQLite</span>
-          </div>
-          <div class="block">
-            <img src="img/postgresql.svg" alt="PostgreSQL" />
-            <span>PostgreSQL</span>
-          </div>
-          <div class="block">
-            <img src="img/fastapi.svg" alt="FastAPI" />
-            <span>FastAPI</span>
-          </div>
-          <div class="block">
-            <img src="img/javascript.svg" alt="JavaScript" />
-            <span>JavaScript</span>
+        </div>
+
+        <div class="skills-group">
+          <h3>AI Development Tools</h3>
+          <div class="skills-slider">
+            <div class="block reveal">
+              <img src="img/cursor.svg" alt="Cursor" />
+              <span>Cursor</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/copilot.svg" alt="GitHub Copilot" />
+              <span>GitHub Copilot</span>
+            </div>
+            <div class="block reveal">
+              <img src="img/claude.svg" alt="Claude" />
+              <span>Claude</span>
+            </div>
           </div>
         </div>
       </section>
-      <section class="contacts container" id="contact">
+      <section class="contacts container reveal" id="contact">
         <h2>Contact</h2>
         <div class="contacts-grid">
           <a href="mailto:buxtataev0720@gmail.com">Email</a>
