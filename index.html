@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Site Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="container">
+        <span class="logo">My profile</span>
+        <nav>
+          <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li class="btn"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero container" id="home">
+        <div class="hero--info">
+          <h1>Yevheniia Bukhtata</h1>
+          <h2>Backend Developer</h2>
+          <p>Junior backend developer with experience in Python.</p>
+          <div class="hero--info__btn">
+            <a
+              href="files/Yevheniia_Bukhtata_Junior_FullStack_Developer.pdf"
+              class="btn"
+              download
+            >
+              CV</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="img/photo.jpg" alt="Yevheniia Bukhtata" />
+        </div>
+      </section>
+      <section class="container about" id="about">
+        <div class="about-info">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              I am a passionate backend developer with a strong foundation in
+              electronics and hardware repair. My transition into software
+              development has been driven by a love for problem-solving and
+              creating efficient, scalable solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="img/todo.png" alt="Todo App" />
+            <h3>Todo App</h3>
+            <p>
+              REST API for task management with user authentication, CRUD
+              operations, and SQLite database using Flask.
+            </p>
+            <div class="technologies">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>SQLite</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="img/notes.png" alt="Notes" />
+            <h3>Notes App</h3>
+            <p>
+              RESTful API built with FastAPI and PostgreSQL for creating,
+              updating, and managing personal notes.
+            </p>
+            <div class="technologies">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="img/logo.png" alt="Logo App" />
+            <h3>Logo App</h3>
+            <p>
+              Responsive web application with Flask backend and SQLite database
+              for managing logo templates.
+            </p>
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Python</span>
+              <span>Flask</span>
+              <span>SQLite</span>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </section>
+      <section class="skills container" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-slider">
+          <div class="block">
+            <img src="img/python.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="block">
+            <img src="img/flask.svg" alt="Flask" />
+            <span>Flask</span>
+          </div>
+          <div class="block">
+            <img src="img/html5.svg" alt="HTML" />
+            <span>HTML</span>
+          </div>
+          <div class="block">
+            <img src="img/css.svg" alt="CSS" />
+            <span>CSS</span>
+          </div>
+          <div class="block">
+            <img src="img/sqlite.svg" alt="SQLite" />
+            <span>SQLite</span>
+          </div>
+          <div class="block">
+            <img src="img/postgresql.svg" alt="PostgreSQL" />
+            <span>PostgreSQL</span>
+          </div>
+          <div class="block">
+            <img src="img/fastapi.svg" alt="FastAPI" />
+            <span>FastAPI</span>
+          </div>
+          <div class="block">
+            <img src="img/javascript.svg" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </section>
+      <section class="contacts container" id="contact">
+        <h2>Contact</h2>
+        <div class="contacts-grid">
+          <a href="mailto:buxtataev0720@gmail.com">Email</a>
+          <a
+            href="https://www.linkedin.com/in/yevheniia-bukhtata-1563b419b/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/YevheniiaBukh" target="_blank">GitHub</a>
+        </div>
+      </section>
+    </div>
+    <footer class="container">
+      <p>
+        &copy; <span id="year"></span> Yevheniia Bukhtata. All rights reserved.
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
