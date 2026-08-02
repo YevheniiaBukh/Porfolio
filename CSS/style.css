@@ -834,14 +834,34 @@ footer {
 
   header nav ul {
     gap: 8px;
-    padding: 0 6px;
+    padding: 0 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+  }
+
+  header nav ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
 
   header nav ul li a {
-    font-size: 14px;
+    font-size: clamp(0.95rem, 4vw, 1.2rem);
+    padding: 10px 4px;
+    letter-spacing: 0.04em;
+  }
+
+  header nav ul li.btn {
+    flex: 1.25;
+  }
+
+  header nav ul li.btn a {
+    width: 100%;
+    min-height: 52px;
+    padding: 12px 18px;
+    font-size: clamp(1rem, 4vw, 1.2rem);
   }
 
   section.hero {
@@ -937,6 +957,17 @@ footer {
 
   .contacts-grid a {
     width: 100%;
+    padding: 16px 18px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, rgba(61, 163, 128, 0.9), rgba(29, 126, 98, 0.85));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: none;
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.97);
+  }
+
+  .contacts-grid a:hover {
+    background: linear-gradient(135deg, rgba(54, 148, 116, 0.96), rgba(26, 111, 88, 0.9));
   }
 
   footer {
