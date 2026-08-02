@@ -846,10 +846,11 @@ footer {
 @media (max-width: 600px) {
   body {
     font-size: 15px;
+    background: #0b0d0f;
   }
 
   .container {
-    width: min(100%, 94%);
+    width: min(100%, 92%);
   }
 
   header {
@@ -872,7 +873,7 @@ footer {
   }
 
   header nav ul li a {
-    font-size: clamp(1.05rem, 4vw, 1.4rem);
+    font-size: 1rem;
     padding: 10px 4px;
     letter-spacing: 0;
     font-weight: 700;
@@ -890,9 +891,10 @@ footer {
     width: 100%;
     min-height: 52px;
     padding: 12px 18px;
-    font-size: clamp(1.1rem, 4vw, 1.45rem);
+    font-size: 1.05rem;
     letter-spacing: 0;
     border-radius: 999px;
+    background: linear-gradient(135deg, #4cb894, #3aa07f);
   }
 
   section.hero {
@@ -912,13 +914,13 @@ footer {
   }
 
   .hero--info h1 {
-    font-size: clamp(2.2rem, 9vw, 3rem);
+    font-size: clamp(2.3rem, 8vw, 3.2rem);
     line-height: 0.98;
     letter-spacing: -0.05em;
   }
 
   .hero--info h2 {
-    font-size: clamp(1.8rem, 6vw, 2.3rem);
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
     margin: 12px 0 10px;
   }
 
@@ -931,7 +933,7 @@ footer {
     width: 260px;
     height: 260px;
     border-width: 4px;
-    border-color: #2cd5b2;
+    border-color: #2cc7a6;
   }
 
   section.about .about-text {
@@ -940,66 +942,59 @@ footer {
     border-radius: 24px;
   }
 
-  .section-head h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  .languages-panel__content {
+    padding: 10px 10px 12px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.06);
   }
 
-  .projects {
-    padding: 10px 0 12px;
+  .languages-panel__header {
+    margin-bottom: 12px;
   }
 
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    overflow: visible;
-    gap: 10px;
-    margin-top: 12px;
-  }
-
-  .project-card {
-    flex: 1 1 auto;
-    min-width: 100%;
-    padding: 18px 16px;
-  }
-
-  .project-content {
-    min-height: auto;
-  }
-
-  section.skills {
-    padding: 10px 0 14px;
-  }
-
-  .skills-group {
-    margin-top: 10px;
-    padding: 14px 12px;
-  }
-
-  .skills-slider {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  .languages-panel__header h3 {
+    font-size: 1.4rem;
   }
 
   .languages-list {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
-  .skills-slider .block {
-    min-height: 100px;
-    padding: 14px 10px;
+  .language-item {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 14px 16px;
+    min-height: 58px;
+  }
+
+  .language-name {
+    font-size: 1.1rem;
+  }
+
+  .language-level {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
   }
 
   .contacts {
-    padding: 20px 0 18px;
+    padding: 22px 0 18px;
+  }
+
+  .contacts h2 {
+    font-size: 2.25rem;
+    margin-bottom: 12px;
   }
 
   .contacts-grid {
     flex-direction: column;
     align-items: stretch;
-    gap: 12px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 18px;
   }
 
   .contacts-grid a {
@@ -1008,23 +1003,23 @@ footer {
     border-radius: 18px;
     background: linear-gradient(
       135deg,
-      rgba(59, 153, 121, 0.86),
-      rgba(36, 121, 97, 0.8)
+      rgba(66, 169, 133, 0.9),
+      rgba(31, 130, 102, 0.8)
     );
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: none;
-    font-size: 0.96rem;
+    font-size: 0.98rem;
     font-weight: 500;
     letter-spacing: 0.02em;
-    color: rgba(255, 255, 255, 0.96);
-    min-height: 44px;
+    color: rgba(255, 255, 255, 0.97);
+    min-height: 42px;
   }
 
   .contacts-grid a:hover {
     background: linear-gradient(
       135deg,
-      rgba(66, 165, 132, 0.92),
-      rgba(39, 130, 105, 0.85)
+      rgba(75, 181, 142, 0.96),
+      rgba(36, 145, 116, 0.86)
     );
   }
 
